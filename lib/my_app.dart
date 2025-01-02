@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:shop/src/features/home/screen/home_screen.dart';
 import 'package:shop/src/features/layout/Layout_screen.dart';
 
 class MyApp extends StatelessWidget {

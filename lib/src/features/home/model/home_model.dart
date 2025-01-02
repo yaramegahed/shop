@@ -4,9 +4,14 @@ class ShoesModel {
   final String subTitle;
   final String image;
   final double price;
-bool isFav ;
+  bool isFav;
   ShoesModel(
-      {required this.rating, required this.title, required this.subTitle, required this.price, required this.image,this.isFav=false});
+      {required this.rating,
+      required this.title,
+      required this.subTitle,
+      required this.price,
+      required this.image,
+      this.isFav = false});
 }
 
 List<ShoesModel> listModelShoes = [
@@ -15,7 +20,7 @@ List<ShoesModel> listModelShoes = [
     price: 120,
     title: "Nike Air Max 90",
     subTitle:
-    "A classic sneaker featuring an Air Max unit in the heel for superior comfort and shock absorption.",
+        "A classic sneaker featuring an Air Max unit in the heel for superior comfort and shock absorption.",
     image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
   ),
   ShoesModel(
@@ -23,7 +28,7 @@ List<ShoesModel> listModelShoes = [
     price: 180,
     title: "Adidas Ultra Boost",
     subTitle:
-    "High-performance running shoe with Boost technology in the midsole for maximum energy and comfort.",
+        "High-performance running shoe with Boost technology in the midsole for maximum energy and comfort.",
     image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5",
   ),
   ShoesModel(
@@ -31,7 +36,7 @@ List<ShoesModel> listModelShoes = [
     price: 3289,
     title: "New Balance 530",
     subTitle:
-    "A classic running shoe that combines style with modern technology, featuring Abzorb shock absorption.",
+        "A classic running shoe that combines style with modern technology, featuring Abzorb shock absorption.",
     image: "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2",
   ),
   ShoesModel(
@@ -39,7 +44,7 @@ List<ShoesModel> listModelShoes = [
     price: 949,
     title: "Asics Gel-Kayano 30",
     subTitle:
-    "Designed for excellent support and stability, equipped with Gel technology for shock absorption and a comfortable midsole.",
+        "Designed for excellent support and stability, equipped with Gel technology for shock absorption and a comfortable midsole.",
     image: "https://images.unsplash.com/photo-1562183241-b937e95585b6",
   ),
   ShoesModel(
@@ -54,7 +59,7 @@ List<ShoesModel> listModelShoes = [
     price: 300,
     title: "Vans Old Skool",
     subTitle:
-    "A classic skateboarding shoe known for its attractive design and comfort.",
+        "A classic skateboarding shoe known for its attractive design and comfort.",
     image: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
   ),
   ShoesModel(
@@ -118,7 +123,7 @@ List<ShoesModel> listModelShoes = [
     price: 160,
     title: "Nike Air Force 1",
     subTitle:
-    "A timeless classic known for its clean design and superior comfort.",
+        "A timeless classic known for its clean design and superior comfort.",
     image: "https://images.unsplash.com/photo-1514989940723-e8e51635b782",
   ),
   ShoesModel(
@@ -126,8 +131,9 @@ List<ShoesModel> listModelShoes = [
     price: 230,
     title: "Nike Air Jordan 4",
     subTitle:
-    "Iconic basketball shoe with unique design elements and premium materials.",
+        "Iconic basketball shoe with unique design elements and premium materials.",
     image: "https://images.unsplash.com/photo-1607853202273-797f1c22a38e",
   ),
 ];
 
+List<ShoesModel> favs = [];

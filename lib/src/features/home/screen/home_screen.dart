@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
         create: (context) => HomeCubit(),
-        child: BlocBuilder<HomeCubit, HomeState>(builder: (context, state) {
+        child: BlocBuilder<HomeCubit, HomeStates>(builder: (context, state) {
           HomeCubit cubit = BlocProvider.of(context);
           return Scaffold(
               appBar: appBar(fontSize: 25, title: "shop"),

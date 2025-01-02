@@ -1,6 +1,8 @@
 
-abstract class HomeState {}
+abstract final class HomeStates {}
 
-class HomeInitial extends HomeState {}
-class UpdateInitial extends HomeState {}
-class UpdateScreen extends HomeState {}
+final class HomeInitial extends HomeStates {}
+final class UpdateInitial extends HomeStates {}
+final class UpdateScreen extends HomeStates {}
+final class AddToList extends HomeStates{}
+final class RemoveFromList extends HomeStates{}

@@ -5,13 +5,12 @@ import 'package:shop/src/features/fav/fav_screen.dart';
 import 'package:shop/src/features/home/screen/home_screen.dart';
 import 'package:shop/src/features/layout/cubit/layout_state.dart';
 
-import '../home/cubit/home_cubit.dart';
 import 'cubit/layout_cubit.dart';
 
 class LayoutScreen extends StatelessWidget {
   List<Widget> screens = [
     const HomeScreen(),
-    const FavScreen(),
+      const FavScreen(),
     const DetailsScreen(),
   ];
 

@@ -25,7 +25,8 @@ class _RowIconsHomeState extends State<RowIconsHome> {
           onPressed: () {}, icon: const Icon(Icons.add_shopping_cart_outlined)),
       IconButton(
           onPressed: () {
-            widget.cubit.changeStatus(model: widget.model);
+            // widget.cubit.changeStatus(model: widget.model);
+            widget.cubit.changeStatusAndAction(model: widget.model);
           },
           icon: Icon(Icons.favorite,
               color: widget.model.isFav == true ? Colors.red : null))
