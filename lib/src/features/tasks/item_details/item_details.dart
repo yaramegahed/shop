@@ -102,7 +102,7 @@ class ItemDetails extends StatelessWidget {
                               ),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 15,
                           ),
                           const Text(
@@ -112,7 +112,7 @@ class ItemDetails extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                                 fontSize: 25),
                           ),
-                          Row(
+                          const Row(
                             children: [
                               Text(
                                 " 240 ر.س",
@@ -165,7 +165,7 @@ class ItemDetails extends StatelessWidget {
                                     color: Colors.deepPurple,
                                     fontWeight: FontWeight.bold),
                               ),
-                              SizedBox(width: 20,),
+                              const SizedBox(width: 20,),
                               Container(
                                 decoration: BoxDecoration(borderRadius: BorderRadius.circular(50),
                                     border: Border.all(color: Colors.deepPurple)),
@@ -199,7 +199,7 @@ class ItemDetails extends StatelessWidget {
                       child: Column(
                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("اختر المقاس",style: TextStyle(color: Colors.deepPurple,fontWeight: FontWeight.bold),),
+                          const Text("اختر المقاس",style: TextStyle(color: Colors.deepPurple,fontWeight: FontWeight.bold),),
                           Row(
                             children: [
                               Container(

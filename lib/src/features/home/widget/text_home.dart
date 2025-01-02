@@ -12,7 +12,7 @@ class TextHome extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(model.title,style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 17),),
-        Text(model.subTitle,maxLines: 1,style: TextStyle(color: Colors.black45),),
+        Text(model.subTitle,maxLines: 1,style: const TextStyle(color: Colors.black45),),
       ],
     );
   }

@@ -3,8 +3,8 @@ import 'package:shop/src/core/widget/app_bar.dart';
 import 'package:shop/src/features/home/model/home_model.dart';
 
 class DetailsScreen extends StatelessWidget {
-  final ShoesModel model;
-  const DetailsScreen({super.key, required this.model});
+  final ShoesModel? model;
+  const DetailsScreen({super.key,   this.model});
 
   @override
   Widget build(BuildContext context) {
@@ -22,18 +22,18 @@ class DetailsScreen extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Column(
             children: [
-              Image.network(model.image,fit: BoxFit.cover,),
+              Image.network(model?.image??"",fit: BoxFit.cover,),
               const SizedBox(
                 height: 15,
               ),
               Row(
                 children: [
-                  Text(model.title,style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+                  Text(model?.title??"",style: const TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
                   const Spacer(),
-                  Text(model.rating),
+                  Text(model?.rating??""),
                 ],
               ),
-              Text(model.subTitle),
+              Text(model?.subTitle??""),
             ],
           ),
         ),

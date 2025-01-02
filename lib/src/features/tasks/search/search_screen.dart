@@ -20,13 +20,13 @@ class SearchScreen extends StatelessWidget {
             children: [
               TextField(
                 decoration: InputDecoration(
-                    suffixIcon: Icon(Icons.search),
+                    suffixIcon: const Icon(Icons.search),
                     hintText: "ادخل كلمة البحث ..",
-                    hintStyle: TextStyle(color: Colors.grey),
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(15))),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               Row(
@@ -38,7 +38,7 @@ class SearchScreen extends StatelessWidget {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
                         border: Border.all(color: Colors.black)),
-                    child: Row(
+                    child: const Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [Icon(Icons.menu_open),
                         Text("ترتيب النتجات",style: TextStyle(fontWeight: FontWeight.bold),)],
@@ -61,13 +61,13 @@ class SearchScreen extends StatelessWidget {
                     width: 35,
                     height: 35,
                     decoration: BoxDecoration(border: Border.all(color: Colors.black),borderRadius: BorderRadius.circular(10)),
-                    child: Icon(Icons.menu),
+                    child: const Icon(Icons.menu),
                   ),
                   Container(
                     width: 35,
                     height: 35,
                     decoration: BoxDecoration(border: Border.all(color: Colors.black),borderRadius: BorderRadius.circular(10),color: Colors.deepPurple),
-                    child: Icon(Icons.menu,color: Colors.white,),
+                    child: const Icon(Icons.menu,color: Colors.white,),
                   ),
 
                 ],

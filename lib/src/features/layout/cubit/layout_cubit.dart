@@ -2,10 +2,10 @@
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'home_state.dart';
+import 'layout_state.dart';
 
-class HomeCubit extends Cubit<HomeState> {
-  HomeCubit() : super(HomeInitial());
+class LayoutCubit extends Cubit<LayoutStates> {
+  LayoutCubit() : super(LayoutInitial());
   int currentIndex=0;
   changeIndex({required value}){
     currentIndex=value;
