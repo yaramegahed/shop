@@ -29,8 +29,7 @@ class HomeScreen extends StatelessWidget {
                     final model = listModelShoes[index];
                     return CardHome(model: model, cubit: cubit);
                   })),
-              // bottomNavigationBar: CustomNavigation(cubit: cubit)
-          );
+           );
         }));
   }
 }

@@ -4,9 +4,9 @@ class ShoesModel {
   final String subTitle;
   final String image;
   final double price;
-
+bool isFav ;
   ShoesModel(
-      {required this.rating, required this.title, required this.subTitle, required this.price, required this.image});
+      {required this.rating, required this.title, required this.subTitle, required this.price, required this.image,this.isFav=false});
 }
 
 List<ShoesModel> listModelShoes = [
