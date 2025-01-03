@@ -11,7 +11,7 @@ class HomeCubit extends Cubit<HomeStates> {
     emit(UpdateInitial());
   }
 
-  changeStatusAndAction({required ShoesModel model}) {
+ void changeStatusAndAction({required ShoesModel model}) {
     // model.isFav = !model.isFav;
     changeStatus(model: model);
     if (model.isFav == true) {
